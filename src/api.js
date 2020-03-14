@@ -13,7 +13,9 @@ export const setHeaders = (headers = {}) => {
   if (token) {
     baseOptions.headers.Authorization = `Token ${token}`;
   } else {
-    baseOptions.headers = {};
+    baseOptions.headers = {
+      'Access-Control-Allow-Origin': '*'
+    };
   }
 };
 

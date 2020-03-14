@@ -21,7 +21,18 @@ class SearchFrom extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      suggestions: []
+      suggestions: [
+        "BajpayeeManoj",
+        "ManojTiwariMP",
+        "ManojPunjabiMD",
+        "manojmuntashir",
+        "Malimanojmusic",
+        "BoxerManojkr",
+        "actormanojjoshi",
+        "tiwarymanoj",
+        "manojsinhabjp",
+        "HeroManoj1"
+      ]
     };
   }
 

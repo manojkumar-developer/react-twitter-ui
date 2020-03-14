@@ -64,7 +64,7 @@ const stateToProps = ({ users }) => {
    const entities = users.entities;
    if(entities && entities.length !== 0){
     Object.keys(entities).map(function(item){
-      usersList.push(entities[item].screen_name)
+      return usersList.push(entities[item].screen_name)
      })
    }
    return  {

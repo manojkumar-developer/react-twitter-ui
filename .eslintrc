@@ -1,0 +1,51 @@
+{
+    "parser": "babel-eslint",
+    "plugins": ["react"],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "jasmine": true,
+      "node": true
+    },
+    "rules": {
+      "allowSingleLine" :true,
+      "computed-property-spacing": [ 2, "never" ],
+      "curly": [ 2, "all"],
+      "indent": [ 2, 2, { "SwitchCase": 1 } ],
+      "max-len": [ 2, 150, 2 ],
+      "new-cap": [ 2, { "capIsNew": false } ],
+      "no-extra-semi": 2,
+      "no-mixed-spaces-and-tabs": 2,
+      "no-multiple-empty-lines": [ 2, { "max": 2 } ],
+      "no-use-before-define": [ 2, "nofunc" ],
+      "no-undef": 2,
+      "no-unused-vars": [ 2, { "args": "none" } ],
+      "no-var": 2,
+      "object-curly-spacing": [ 2, "always" ],
+      "quotes": [ 2, "double", { "allowTemplateLiterals": true } ],
+      "jsx-quotes": [2, "prefer-double"],
+      "keyword-spacing": 2,
+      "semi-spacing": 2,
+      "space-before-blocks": [ 2, "always"],
+      "vars-on-top": 2,
+      "react/display-name": 0,
+      "jsx-a11y/anchor-is-valid": 0,
+      "react/jsx-no-undef": 2,
+      "react/jsx-sort-props": 0,
+      "react/jsx-no-target-blank" :0,
+      "react/jsx-uses-react": 2,
+      "react/jsx-uses-vars": 2,
+      "react/jsx-curly-spacing": [2, "always"],
+      "react/no-multi-comp": 0,
+      "react/no-unknown-property": 2,
+      "react/react-in-jsx-scope": 2,
+      "react/self-closing-comp": 2,
+      "react/jsx-wrap-multilines": 2
+    }
+}

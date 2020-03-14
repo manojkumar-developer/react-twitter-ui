@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { formatTweet, formatDate } from "../../utils/helpers";
+import { formatDate } from "../../utils/helpers";
 import { Link, withRouter } from "react-router-dom";
 
 //importing icons from react-icons
@@ -16,27 +16,27 @@ class Tweet extends Component {
 
   handleLike = e => {
     e.preventDefault();
+    // const { dispatch, tweet, authedUser } = this.props;
 
-    const { dispatch, tweet, authedUser } = this.props;
+    // //dispatching the action creator
+    // // dispatch(
+    // //   handleToggleTweet({
+    // //     id: tweet.id,
+    // //     hasLiked: tweet.hasLiked,
+    // //     authedUser
+    // //   })
+    // // );
 
-    //dispatching the action creator
-    // dispatch(
-    //   handleToggleTweet({
-    //     id: tweet.id,
-    //     hasLiked: tweet.hasLiked,
-    //     authedUser
-    //   })
-    // );
-
-    //
+    // //
   };
 
   renderExtendedEntites = mediaList => {
     return Object.keys(mediaList).map(item=>{
       const currentItem = mediaList[item];
       if(currentItem.type === "photo"){
-        return (<img src={`${currentItem.media_url_https}?format=jpg&name=small`} width="100%"/>)
-      }      
+        return (<img src={`${currentItem.media_url_https}?format=jpg&name=small`} alt="Avatar" width="100%"/>)
+      }   
+      return true;   
     })
 
   }
@@ -47,7 +47,6 @@ class Tweet extends Component {
       return <p>This tweet doesn't exist</p>;
     }
     const {
-      name,
       user,
       created_at,
       text,
@@ -56,7 +55,6 @@ class Tweet extends Component {
       replies,
       id,
       parent,
-      profile_banner_url,
       extended_entities
     } = tweet;
   

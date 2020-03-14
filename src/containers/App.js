@@ -9,7 +9,7 @@ import Dashboard from "./Dashboard";
 import SearchFrom from "../components/SearchForm";
 
 import headerImage from "./header.png"
-import Nav from "./Nav";
+// import Nav from "./Nav";
 
 class App extends Component {
   componentDidMount() {
@@ -25,7 +25,7 @@ class App extends Component {
           <div className="container">
           <div className="row">
             <div className="col-3">
-              <img src={headerImage} className="header-style" />
+              <img src={headerImage} className="header-style" alt="Menu"/>
             </div>
             <div className="col-6">
               {this.props.loading === true ? null : (
@@ -36,7 +36,7 @@ class App extends Component {
               )}
             </div>
             <div className="col-3">
-                <SearchFrom />
+              <SearchFrom />
             </div>
           </div>
           </div>

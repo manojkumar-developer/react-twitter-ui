@@ -35,7 +35,6 @@ export const request = ({
 
   if (method === "get") {
     const query = Object.keys(data).length ? `?${qs.stringify(data)}` : '';
-    console.log(`${API_URL}${url}${query}`);
     return axios.get(`${API_URL}${url}${query}`, baseOptions).then(
       (response) => (response),
       (err) => errorWrapper(err)

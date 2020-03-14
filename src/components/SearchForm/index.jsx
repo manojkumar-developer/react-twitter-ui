@@ -75,8 +75,7 @@ const stateToProps = ({ users }) => {
 }
 
 SearchFrom.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-  path: PropTypes.string.isRequired
+  dispatch: PropTypes.func.isRequired
 };
 
 export default connect(stateToProps)(SearchFrom);

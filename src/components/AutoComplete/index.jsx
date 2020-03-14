@@ -126,7 +126,7 @@ class Autocomplete extends Component {
         );
       } else {
         suggestionsListComponent = (
-          <div class="no-suggestions">
+          <div className="no-suggestions">
             <em>No suggestions, you're on your own!</em>
           </div>
         );
@@ -135,7 +135,7 @@ class Autocomplete extends Component {
 
     return (
       <Fragment>
-        <span class="icon"><i class="fa fa-search search-icon"></i>
+        <span className="icon"><i className="fa fa-search search-icon"></i>
           <input
             type="text"
             onChange={onChange}

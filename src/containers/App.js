@@ -25,7 +25,7 @@ class App extends Component {
           <div className="container">
           <div className="row">
             <div className="col-3">
-              <image src={headerImage} className="header-style" />
+              <img src={headerImage} className="header-style" />
             </div>
             <div className="col-6">
               {this.props.loading === true ? null : (
